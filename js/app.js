@@ -34,3 +34,32 @@ console.log(elemento);
 
 elemento = document.forms[0].classList;
 console.log(elemento);
+
+// Accedemos a las imaganes del HTML
+elemento = document.images;
+console.log(elemento);
+
+elemento = document.images[18];
+console.log(elemento);
+
+elemento = document.images[2].getAttribute('src');
+console.log('SRC de la imagen: ' + elemento);
+
+// Programa para recorrer y pintar todas las imagenes del HTML
+var img = document.images;
+var imgArr = Array.from(img);
+imgArr.forEach(function(imG) {
+    console.log(imG);
+});
+
+let ele_hero;
+ele_hero = document.getElementById('hero');
+console.log(ele_hero);
+
+let cabecera;
+cabecera = document.getElementById('encabezado');
+cabecera.style.background = '#333';
+cabecera.style.color = '#fff';
+cabecera.style.padding = '200px';
+cabecera.textContent = 'DIEGO';
+console.log(cabecera);
